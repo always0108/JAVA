@@ -1,0 +1,23 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		printtest test = new printtest("haha",5,6);
+		test.print();
+	}
+}
+
+class printtest
+{
+	String s;
+	int m;
+	int n;
+	
+	void print()
+	{
+		System.out.println(m);
+		System.out.println(n);
+		
+	}
+}

@@ -1,0 +1,24 @@
+package 正五边形的面积和周长;
+
+import java.util.Scanner;
+
+
+public class Computesandc {
+
+	public static void main(String[] args){
+		
+		Scanner input = new Scanner(System.in);
+		
+		 System.out.print("Enter the long:");
+		 double a = input.nextDouble();
+		 
+		 double c = 5 * a ; 
+		 System.out.println(c);
+		 
+		 double temp = Math.sqrt(25 + 10 * Math.sqrt(5));
+		 double s = ( a * a * temp)/ 4;
+		 System.out.println(s);
+
+		
+	}
+}

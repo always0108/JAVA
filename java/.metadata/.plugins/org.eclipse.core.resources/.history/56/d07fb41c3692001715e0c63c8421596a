@@ -1,0 +1,21 @@
+package 正五边形的面积和周长;
+
+import java.util.Scanner;
+
+public class Computesandc {
+
+	public static void main(String[] args){
+		
+		Scanner input = new Scanner(System.in);
+		
+		 System.out.print("Enter three numbers:");
+		 double a = input.nextDouble();
+		 double b = input.nextDouble();
+		 double c = input.nextDouble();
+		 
+		 double average = (a+b+c)/3;
+		 
+		 System.out.println("The average of "+ a + " " + b +" "+ c +"is" + average);
+		
+	}
+}

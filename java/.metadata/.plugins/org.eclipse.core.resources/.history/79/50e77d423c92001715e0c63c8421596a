@@ -1,0 +1,22 @@
+package 正五边形的面积和周长;
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+
+public class Computesandc {
+
+	public static void main(String[] args){
+		
+		 Scanner input = new Scanner(System.in);
+		
+		 double a = input.nextDouble();
+	
+		 double s = ( a * a * Math.sqrt(25 + 10 * Math.sqrt(5)))/ 4;
+		 double c = 5 * a ; 
+		 
+		 System.out.println(String.format("%.4f", s));
+		 System.out.println(s);
+		 System.out.println(c);
+	}
+}

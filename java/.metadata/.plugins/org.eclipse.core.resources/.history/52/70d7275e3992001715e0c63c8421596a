@@ -1,0 +1,20 @@
+package 正五边形的面积和周长;
+
+import java.util.Scanner;
+
+
+public class Computesandc {
+
+	public static void main(String[] args){
+		
+		 Scanner input = new Scanner(System.in);
+		
+		 float a = input.nextFloat();
+	
+		 float s = ( a * a * Math.sqrt(25 + 10 * Math.sqrt(5)))/ 4;
+		 float c = 5 * a ; 
+		 
+		 System.out.println(s);
+		 System.out.println(c);
+	}
+}
