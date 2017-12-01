@@ -1,10 +1,13 @@
 package com.company;
 
+
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         try {
-            NewLoan m = new NewLoan(-1, 3, 3);
+            NewLoan m = new NewLoan(input.nextDouble(), input.nextInt(), input.nextDouble());
         }
         catch (Exception ex) {
             System.out.println(ex);

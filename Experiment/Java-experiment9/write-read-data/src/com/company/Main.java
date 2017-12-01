@@ -9,9 +9,9 @@ public class Main {
 
         File file = new File("Exercise12_15.txt");
 
-        /*if (file.exists()){
+        if (file.exists()){
             file.delete();
-        }*/
+        }
 
         if (!file.exists()) {
             try (
