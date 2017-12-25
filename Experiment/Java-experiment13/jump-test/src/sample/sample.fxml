@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Main">
+  <children>
+    <GridPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="800.0">
+      <children>
+        <Button fx:id="loginbutton" contentDisplay="LEFT" mnemonicParsing="false" onAction="#logintest" prefWidth="83.0" text="登录" textAlignment="LEFT" GridPane.columnIndex="1" GridPane.rowIndex="7">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button fx:id="Test" font="$x1" mnemonicParsing="false" onAction="#Hello" prefWidth="83.0" text="退出" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <Label alignment="CENTER" contentDisplay="LEFT" font="$x1" prefHeight="30.0" prefWidth="247.0" text="用户名：" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label alignment="CENTER" font="$x1" prefWidth="253.0" text="密码：" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Label alignment="CENTER" prefWidth="313.0" text="西邮导航" textAlignment="CENTER" textFill="#0066ff" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </Label>
+        <PasswordField fx:id="passwordarea" prefHeight="26.000099999997474" prefWidth="313.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="usernamefield" prefHeight="30.0" prefWidth="313.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.0" minWidth="10.0" prefWidth="247.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="402.0" minWidth="10.0" prefWidth="313.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="240.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>
