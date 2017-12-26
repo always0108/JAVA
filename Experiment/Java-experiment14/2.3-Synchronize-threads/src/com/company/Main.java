@@ -5,19 +5,32 @@ import java.util.concurrent.Executors;
 
 public class Main {
 
+    //并不是因为类型的问题，是思路的问题
     private Integer sum1 = new Integer(0);
     private int sum = 0;
+
+    //同步
+    public synchronized void Increase(){
+        sum++;
+        sum1=new Integer(sum1+1);
+    }
+
+    //不同步
+    /*public  void Increase(){
+        sum++;
+        sum1=new Integer(sum1+1);
+    }*/
 
     public void ThreadPool() {
         ExecutorService executor = Executors.newFixedThreadPool(1000);
 
         for (int i = 0; i < 1000; i++) {
                 executor.execute(new SumTask());
-                try{
+                /*try{
                     Thread.sleep(1);
                 }catch(InterruptedException ex){
 
-                }
+                }*/
         }
         executor.shutdown();
 
@@ -27,25 +40,16 @@ public class Main {
     }
 
     class SumTask implements Runnable {
-        //同步
-        /*public synchronized void run() {
-            sum++;
-            sum1=new Integer(sum1+1);
-        }*/
-
-        //不同步
+        //同步的是自增这个操作，而不是run方法，每个run方法都是独立的，不相互影响
         public void run(){
-            sum++;
-            sum1=new Integer(sum1+1);
+            Increase();
         }
     }
 
     public static void main(String[] args) {
-        for(int i=1;i<=20;i++){
             Main test = new Main();
             test.ThreadPool();
-            System.out.println("What is sum  ? " + test.sum);
-            System.out.println("What is sum1 ? " + test.sum1);
-        }
+            System.out.println("What is sum (int)    ? " + test.sum);
+            System.out.println("What is sum1(Integer)? " + test.sum1);
     }
 }
