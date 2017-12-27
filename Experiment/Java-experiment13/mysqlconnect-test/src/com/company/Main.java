@@ -24,15 +24,19 @@ public class Main {
             if(!conn.isClosed())
                 System.out.println("Succeeded connecting to the Database!");
 
-            Statement stmt = conn.createStatement();
+
+
+            /*Statement stmt = conn.createStatement();
 
             //看是否能查到相应的数据
             ResultSet result = stmt.executeQuery("SELECT * FROM Password WHERE name = 'limeng'");
+
+            //通过查看是否存在查找到数据来判断
             if(result.next()){
                 System.out.println("查到该信息");
             }else{
                 System.out.println("查不到该信息");
-            }
+            }*/
 
             /*
             //executeQuery返回的是java.sql.ResultSet对象,代表查询结果，
@@ -59,7 +63,41 @@ public class Main {
             //stmt.execute("DELETE FROM Password WHERE name = 'user'");
 
             //result.close();
+            //stmt.close();
+
+            PreparedStatement stmt ;
+
+            //增加
+            //添加前最好判断数据库中是否有该数据存在
+            /*stmt= conn.prepareStatement(
+                    "INSERT INTO Password(name,password) VALUES (?,?)");
+            stmt.setString(1,"test");
+            stmt.setString(2,"222222");
+            stmt.executeUpdate();
+            stmt.clearParameters();//清除设置参数
+            */
+
+            //删除
+            //stmt = conn.prepareStatement("DELETE FROM Password WHERE name = 'test'");
+            //stmt.executeUpdate();
+
+            //修改
+            /*stmt = conn.prepareStatement("UPDATE Password SET  password = ? WHERE name = ?");
+            stmt.setString(1,"19980108");
+            stmt.setString(2,"li");
+            stmt.executeUpdate();*/
+
+            //删除和更新该条数据不存在时，不做任何操作
+
+            //查找
+            stmt = conn.prepareStatement("SELECT * FROM  Password");
+            ResultSet result = stmt.executeQuery();
+            while (result.next()){
+                System.out.printf("%3d %-20s%-20s\n",result.getInt("id"),result.getString("name"),result.getString("password"));
+
+            }
             stmt.close();
+
             //关闭与数据库的连接
             conn.close();
         }catch(SQLException e) {
