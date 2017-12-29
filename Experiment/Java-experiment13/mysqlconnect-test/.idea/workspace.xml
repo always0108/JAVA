@@ -43,19 +43,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="89" column="34" lean-forward="false" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+            <state relative-caret-position="3800">
+              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
               <folding>
-                <marker date="1514379190510" expanded="true" signature="907:951" ph="SELECT * FRO... Password" />
-                <marker date="1514379190510" expanded="true" signature="2009:2070" ph="UPDATE Password... " />
-                <marker date="1514379190510" expanded="true" signature="2130:2170" ph="DELETE FROM Password... " />
-                <marker date="1514379190510" expanded="true" signature="2387:2423" ph="INSERT INTO Password... " />
-                <marker date="1514379190510" expanded="true" signature="2387:2435" ph="INSERT INTO Password... " />
-                <marker date="1514379190510" expanded="true" signature="2672:2712" ph="DELETE FROM Password... " />
-                <marker date="1514379190510" expanded="true" signature="2814:2843" ph="UPDATE Password... " />
-                <marker date="1514379190510" expanded="true" signature="2814:2861" ph="UPDATE Password... " />
-                <marker date="1514379190510" expanded="true" signature="2814:2862" ph="UPDATE Password... " />
-                <marker date="1514379190510" expanded="true" signature="3076:3099" ph="SELECT * FRO... Password" />
+                <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+                <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+                <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+                <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+                <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+                <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+                <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+                <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+                <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+                <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
               </folding>
             </state>
           </provider>
@@ -120,8 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,8 +131,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,12 +214,13 @@
       <workItem from="1514214719016" duration="182000" />
       <workItem from="1514270576424" duration="24000" />
       <workItem from="1514288176735" duration="4658000" />
-      <workItem from="1514377393722" duration="1799000" />
+      <workItem from="1514377393722" duration="3245000" />
+      <workItem from="1514443035980" duration="1249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11040000" />
+    <option name="totallyTimeSpent" value="13735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1054" extended-state="6" />
@@ -233,7 +234,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36631578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36631578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -270,16 +271,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514379190510" expanded="true" signature="907:951" ph="SELECT * FRO... Password" />
-            <marker date="1514379190510" expanded="true" signature="2009:2070" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2130:2170" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2423" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2435" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2672:2712" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2843" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2861" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2862" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="3076:3099" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
           </folding>
         </state>
       </provider>
@@ -304,16 +305,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514379190510" expanded="true" signature="907:951" ph="SELECT * FRO... Password" />
-            <marker date="1514379190510" expanded="true" signature="2009:2070" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2130:2170" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2423" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2435" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2672:2712" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2843" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2861" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2862" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="3076:3099" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
           </folding>
         </state>
       </provider>
@@ -338,16 +339,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514379190510" expanded="true" signature="907:951" ph="SELECT * FRO... Password" />
-            <marker date="1514379190510" expanded="true" signature="2009:2070" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2130:2170" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2423" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2435" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2672:2712" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2843" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2861" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2862" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="3076:3099" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
           </folding>
         </state>
       </provider>
@@ -372,16 +373,50 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514379190510" expanded="true" signature="907:951" ph="SELECT * FRO... Password" />
-            <marker date="1514379190510" expanded="true" signature="2009:2070" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2130:2170" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2423" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2435" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2672:2712" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2843" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2861" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2862" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="3076:3099" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/83b0e1b0/250302f8-344b-441c-9c64-c95ec4237ffb/login.Password">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/250302f8-344b-441c-9c64-c95ec4237ffb/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
           </folding>
         </state>
       </provider>
@@ -418,19 +453,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="89" column="34" lean-forward="false" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+        <state relative-caret-position="3800">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
           <folding>
-            <marker date="1514379190510" expanded="true" signature="907:951" ph="SELECT * FRO... Password" />
-            <marker date="1514379190510" expanded="true" signature="2009:2070" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2130:2170" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2423" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2387:2435" ph="INSERT INTO Password... " />
-            <marker date="1514379190510" expanded="true" signature="2672:2712" ph="DELETE FROM Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2843" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2861" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="2814:2862" ph="UPDATE Password... " />
-            <marker date="1514379190510" expanded="true" signature="3076:3099" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="905:949" ph="SELECT * FRO... Password" />
+            <marker date="1514443564070" expanded="true" signature="2007:2068" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2128:2168" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2421" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2385:2433" ph="INSERT INTO Password... " />
+            <marker date="1514443564070" expanded="true" signature="2670:2710" ph="DELETE FROM Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2841" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2859" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="2812:2860" ph="UPDATE Password... " />
+            <marker date="1514443564070" expanded="true" signature="3074:3097" ph="SELECT * FRO... Password" />
           </folding>
         </state>
       </provider>

@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	    String[] strings = {"a","b","c","d","e"};
-	    System.out.println(Main.binarySearch(strings,"d"));
+	    System.out.println(Main.binarySearch(strings,"f"));
     }
 
     public static<E extends Comparable<E>>

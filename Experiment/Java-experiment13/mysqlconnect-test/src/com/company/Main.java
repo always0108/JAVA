@@ -24,8 +24,6 @@ public class Main {
             if(!conn.isClosed())
                 System.out.println("Succeeded connecting to the Database!");
 
-
-
             /*Statement stmt = conn.createStatement();
 
             //看是否能查到相应的数据
@@ -107,7 +105,7 @@ public class Main {
             // TODO: handle exception
             e.printStackTrace();
         }finally{
-            System.out.println("数据库数据成功获取！！");
+            System.out.println("Get data from database success!");
         }
     }
 }
