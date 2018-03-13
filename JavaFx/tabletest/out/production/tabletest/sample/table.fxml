@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <TableView fx:id="table" layoutX="114.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+        <TableColumn id="checklist" prefWidth="75.0" text="check" fx:id="checklist" />
+        <TableColumn id="name" prefWidth="75.0" text="name" fx:id="name" />
+      </columns>
+    </TableView>
+    <Button id="" fx:id="ok" layoutX="178.0" layoutY="297.0" mnemonicParsing="false" onAction="#check" prefHeight="43.0" prefWidth="72.0" text="确定">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
