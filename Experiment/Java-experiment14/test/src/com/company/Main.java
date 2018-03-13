@@ -80,10 +80,5 @@ public class Main {
 			}
 			b=b.add(BigInteger.ONE);
 		}
-
-
-
-
 	}
 }
-

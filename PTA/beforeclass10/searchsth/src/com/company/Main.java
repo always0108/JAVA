@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat("#.##");
         HashMap<String,Integer> map = new HashMap<>();

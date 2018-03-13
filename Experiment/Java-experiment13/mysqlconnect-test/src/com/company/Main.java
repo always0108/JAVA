@@ -14,7 +14,7 @@ public class Main {
         }
 
         //取得Connection操作对象
-        String url = "jdbc:mysql://localhost:3306/login?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+        String url = "jdbc:mysql://localhost:3306/login";
         String user = "root";
         String password = "LM19980108!@";
         Connection conn = null;
@@ -75,6 +75,7 @@ public class Main {
             stmt.clearParameters();//清除设置参数
             */
 
+
             //删除
             //stmt = conn.prepareStatement("DELETE FROM Password WHERE name = 'test'");
             //stmt.executeUpdate();
@@ -88,14 +89,14 @@ public class Main {
             //删除和更新该条数据不存在时，不做任何操作
 
             //查找
-            stmt = conn.prepareStatement("SELECT * FROM  Password");
+            /*stmt = conn.prepareStatement("SELECT * FROM  Password");
             ResultSet result = stmt.executeQuery();
             while (result.next()){
                 System.out.printf("%3d %-20s%-20s\n",result.getInt("id"),result.getString("name"),result.getString("password"));
 
             }
             stmt.close();
-
+            */
             //关闭与数据库的连接
             conn.close();
         }catch(SQLException e) {

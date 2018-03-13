@@ -46,3 +46,27 @@ public class Main {
         input.close();
     }
 }
+
+/*
+//矩形
+class Rectangle{
+
+    private double width;
+    private double height;
+
+    public Rectangle() {}
+
+    public Rectangle(double width,double height){
+        this.width = width;
+        this.height = height;
+    }
+
+    public double getArea(){
+        return width*height;
+    }
+
+    public double getPerimeter(){
+        return (width+height)*2;
+    }
+}
+ */
