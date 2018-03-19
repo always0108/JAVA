@@ -67,7 +67,7 @@ public class SeatUI {
                     ticket.setSeat_id(FilmUI.allSchedulePlayStudioSeat.get(i).getSeat_id());
                     ticket.setSchedule_id(schedule.getSchedule_id());
                     ticket.setTicket_price((float)schedule.getPrice());
-                    ticket.setStatus(9);
+                    ticket.setStatus(2);
                     //System.out.println(ticket);
                     ticketlist.add(ticket);
                 }

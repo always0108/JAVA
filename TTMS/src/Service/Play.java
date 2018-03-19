@@ -28,6 +28,11 @@ public class Play {
         this.price = price;
     }
 
+    public Play(String play_name)
+    {
+        this.play_name =play_name;
+    }
+
     public int getPlay_id() {
         return play_id;
     }
