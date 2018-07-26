@@ -21,6 +21,9 @@ public class Main extends Application {
         Group g = new Group();
         Scene scene = new Scene(g, 800, 600);
 
+        scene.getStylesheets().add(getClass().getResource("MainStyle.css").toExternalForm());
+
+
         TitledPane studio = new TitledPane();
         studio.setText("演出厅管理");
         VBox studiocontent = new VBox();
@@ -55,7 +58,6 @@ public class Main extends Application {
                 });*/
 
         g.getChildren().add(accordion);
-
         primaryStage.setScene(scene);
         primaryStage.show();
     }

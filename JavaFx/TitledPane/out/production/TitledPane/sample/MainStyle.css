@@ -1,0 +1,25 @@
+.titledPane{
+    -fx-cell-size: 150px;
+    -fx-font-style: italic;
+    -fx-font-size: 24px;
+    -fx-background-color: tomato;
+}
+
+.accordion{
+    -fx-font-size: 28;
+    -fx-font-style: italic;
+    -fx-cell-size: 150px;
+}
+
+.accordion{
+    -fx-font-size: 28;
+    -fx-font-style: italic;
+    -fx-cell-size: 150px;
+}
+
+.button{
+    -fx-cell-size: 100px;
+    -fx-font-style: italic;
+    -fx-background-color: dodgerblue;
+    -fx-font-size: 24px;
+}
