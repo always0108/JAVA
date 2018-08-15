@@ -11,7 +11,7 @@ public class Producer implements Runnable{
     public void run(){
         while(true){
             try{
-                Thread.sleep(1000);
+                Thread.sleep(100);
                 storage.produce();
             }catch (InterruptedException e){
                 e.printStackTrace();

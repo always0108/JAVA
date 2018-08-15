@@ -20,13 +20,12 @@ public class Storage {
     // 仓库空的条件变量
     private final Condition empty = lock.newCondition();
 
-    // 生产num个产品
-    public void produce(String name)
+    public void produce()
     {
         // 获得锁
         lock.lock();
         while (list.size() + 1 > MAX_SIZE) {
-            System.out.println("【生产者" + name + "】仓库已满");
+            System.out.println("【生产者" + Thread.currentThread().getName() + "】仓库已满");
             try {
                 full.await();
             } catch (InterruptedException e) {
@@ -34,7 +33,7 @@ public class Storage {
             }
         }
         list.add(new Object());
-        System.out.println("【生产者" + name + "】生产一个产品，现库存" + list.size());
+        System.out.println("【生产者" + Thread.currentThread().getName() + "】生产一个产品，现库存" + list.size());
 
         // 唤醒其他所有线程、释放锁
         full.signalAll();
@@ -42,13 +41,12 @@ public class Storage {
         lock.unlock();
     }
 
-    // 消费num个产品
-    public void consume(String name)
+    public void consume()
     {
         // 获得锁
         lock.lock();
         while (list.size() == 0) {
-            System.out.println("【消费者" + name + "】仓库为空");
+            System.out.println("【消费者" + Thread.currentThread().getName() + "】仓库为空");
             try {
                 empty.await();
             } catch (InterruptedException e) {
@@ -56,7 +54,7 @@ public class Storage {
             }
         }
         list.remove();
-        System.out.println("【消费者" + name + "】消费一个产品，现库存" + list.size());
+        System.out.println("【消费者" + Thread.currentThread().getName() + "】消费一个产品，现库存" + list.size());
 
         // 唤醒其他所有线程、释放锁
         full.signalAll();
