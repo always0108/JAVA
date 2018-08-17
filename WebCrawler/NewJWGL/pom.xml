@@ -21,20 +21,12 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.49</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
         <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.11</version>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.60</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.squareup.jnagmp/bouncycastle-rsa -->
-        <dependency>
-            <groupId>com.squareup.jnagmp</groupId>
-            <artifactId>bouncycastle-rsa</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-
-
     </dependencies>
 
 

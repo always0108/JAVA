@@ -1,6 +1,9 @@
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
 import javax.crypto.Cipher;
 import java.math.BigInteger;
 import java.security.*;
+import java.security.interfaces.RSAPublicKey;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Base64;
 
@@ -26,23 +29,21 @@ public class MyUtils {
         return sb.toString();
     }
 
-    public static PublicKey getPublicKey(String modulus, String exponent) throws Exception{
+    public static RSAPublicKey getPublicKey(String modulus, String exponent) throws Exception{
         // 将Base64转化为二进制
         String modulusBin = base64Str2Bin(modulus);
         String exponentBin = base64Str2Bin(exponent);
         BigInteger m = new BigInteger(modulusBin,2);
         BigInteger e = new BigInteger(exponentBin,2);
-
         RSAPublicKeySpec keySpec = new RSAPublicKeySpec(m, e);
-        KeyFactory keyFactory = KeyFactory.getInstance("MyUtils");
-        PublicKey publicKey = keyFactory.generatePublic(keySpec);
-        return publicKey;
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+        RSAPublicKey rsaPublicKey = (RSAPublicKey) keyFactory.generatePublic(keySpec);
+        return rsaPublicKey;
     }
 
-    public static String EncryptByPublicKey(PublicKey publicKey , String data) throws Exception{
-        Cipher cipher = Cipher.getInstance("MyUtils");
-        cipher.init(Cipher.ENCRYPT_MODE, publicKey);
-        byte[] cipherText = cipher.doFinal(data.getBytes());
-        return Base64.getEncoder().encodeToString(cipherText);
+    public static String EncryptByPublicKey(RSAPublicKey rsaPublicKey , String data) throws Exception{
+        Cipher cipher=Cipher.getInstance("RSA");//java默认"RSA"="RSA/ECB/PKCS1Padding"
+        cipher.init(Cipher.ENCRYPT_MODE, rsaPublicKey);
+        return Base64.getEncoder().encodeToString(cipher.doFinal(data.getBytes("UTF-8")));
     }
 }

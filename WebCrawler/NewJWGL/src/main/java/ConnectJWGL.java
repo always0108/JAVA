@@ -3,8 +3,8 @@ import com.alibaba.fastjson.JSONObject;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import java.io.*;
-import java.security.PublicKey;
+
+import java.security.interfaces.RSAPublicKey;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -20,66 +20,65 @@ public class ConnectJWGL {
     private Connection.Response response;
     private Document document;
 
-    public ConnectJWGL(){
-        connectIndex();
-    }
+    public ConnectJWGL(){ }
 
     public Map<String, String> getCookies() {
         return cookies;
     }
 
-    //首次连接获取cookies和csrftoken
-    public void connectIndex(){
+    public RSAPublicKey getRSApublickey() throws Exception{
+        connection = Jsoup.connect("http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_getPublicKey.html?" +
+                "time="+ new Date().getTime());
+        connection.header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0");
+        response = connection.ignoreContentType(true).timeout(5000).execute();
+        cookies = response.cookies();
+        JSONObject jsonObject = JSON.parseObject(response.body());
+        modulus = jsonObject.getString("modulus");
+        exponent = jsonObject.getString("exponent");
+        return MyUtils.getPublicKey(modulus,exponent);
+    }
+
+    // 获取csrftoken
+    public void getCsrftoken(){
         try{
-            connection = Jsoup.connect("http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t=1533888613519");
+            connection = Jsoup.connect("http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t="+new Date().getTime());
             connection.header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0");
-            response = connection.timeout(5000).execute();
-            //保存Cookies
-            cookies = response.cookies();
+            response = connection.cookies(cookies).timeout(5000).execute();
+            //保存csrftoken
             document = Jsoup.parse(response.body());
             csrftoken = document.getElementById("csrftoken").val();
-            getRSApublickey();
+            System.out.println(csrftoken);
         }catch (Exception ex){
             ex.printStackTrace();
         }
     }
 
-    public PublicKey getRSApublickey() throws Exception{
-        Date time = new Date();
-        //connection = Jsoup.connect("http://202.119.206.62/jwglxt/xtgl/login_getPublicKey.html?time="+time.getTime());
-        connection = Jsoup.connect("http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_getPublicKey.html?time="+time.getTime());
-        connection.header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0");
-        response = connection.ignoreContentType(true).cookies(cookies).timeout(5000).execute();
-        JSONObject jsonObject = JSON.parseObject(response.body());
-        modulus = jsonObject.getString("modulus");
-        exponent = jsonObject.getString("exponent");
-        PublicKey publicKey = MyUtils.getPublicKey(modulus,exponent);
-        return publicKey;
-    }
-
     //登录
-    public boolean login(String stuNum,String password,PublicKey publicKey) throws Exception{
+    public boolean login(String stuNum,String password,RSAPublicKey rsaPublicKey) throws Exception{
 
-        String mm = MyUtils.EncryptByPublicKey(publicKey,password);
-        //填充post数据
-        Map<String, String> datas = new HashMap<>();
-        datas.put("csrftoken",csrftoken);
-        datas.put("yhm",stuNum);
-        datas.put("mm",mm);
-        datas.put("mm",mm);
+        String mm = MyUtils.EncryptByPublicKey(rsaPublicKey,password);
+        connection = Jsoup.connect("http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html");
+//        connection.header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+//        connection.header("Accept-Encoding","gzip, deflate");
+//        connection.header("Accept-Language","zh-CN,zh;q=0.9");
+//        connection.header("Cache-Control","no-cache");
+//        connection.header("Connection","keep-alive");
+//        connection.header("Content-Type","application/x-www-form-urlencoded");
+//        connection.header("Host","www.zfjw.xupt.edu.cn");
+//        connection.header("Referer","http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html");
+//        connection.header("Upgrade-Insecure-Requests","1");
+        connection.header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0");
+        connection.data("csrftoken",csrftoken);
+        connection.data("yhm",stuNum);
+        connection.data("mm",mm);
+        connection.data("mm",mm);
+        connection.cookies(cookies).ignoreContentType(true)
+                .method(Connection.Method.POST).execute();
 
-        try{
-            connection = Jsoup.connect("http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html");
-            connection.header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0");
-            // 设置cookie和post上面的map数据
-            response = connection.postDataCharset("GB2312").ignoreContentType(true).method(Connection.Method.POST)
-                    .data(datas).cookies(cookies).execute();
-            document = response.parse();
-            System.out.println(response.body());
-            return true;
-        }catch (IOException ex){
-            ex.printStackTrace();
-            return false;
-        }
+
+        response = connection.execute();
+        document = Jsoup.parse(response.body());
+        System.out.println(document.getElementById("tips").text());
+        return true;
     }
 }
