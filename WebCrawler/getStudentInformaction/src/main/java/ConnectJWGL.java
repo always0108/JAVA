@@ -23,6 +23,10 @@ public class ConnectJWGL {
         connectIndex();
     }
 
+    public Map<String, String> getCookies() {
+        return cookies;
+    }
+
     //首次连接获取cookies和__VIEWSTATE
     public void connectIndex(){
         try{
